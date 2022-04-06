@@ -47,10 +47,10 @@ class Member extends CI_Controller
     public function daftar()
     {
       {
-          $this->form_validation->set_rules('nama', 'Nama Lengkap', 'required', [ 'required' => 'Nama Belum diis!!'
+          $this->form_validation->set_rules('nama', 'Nama Lengkap', 'required', [ 'required' => 'Nama Belum diisi!!'
 
           ]);
-          $this->form_validation->set_rules('alamat', 'Alamat Lengkap', 'required', [ 'required' => 'Alamat Belum diis!!'
+          $this->form_validation->set_rules('alamat', 'Alamat Lengkap', 'required', [ 'required' => 'Alamat Belum diisi!!'
 
           ]);
           $this->form_validation->set_rules('email', 'Alamat Email', 'required|trim|valid_email|is_unique[user.email]', [
