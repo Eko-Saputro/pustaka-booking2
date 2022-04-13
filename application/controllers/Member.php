@@ -46,7 +46,7 @@ class Member extends CI_Controller
     }
     public function daftar()
     {
-      {
+
           $this->form_validation->set_rules('nama', 'Nama Lengkap', 'required', [ 'required' => 'Nama Belum diisi!!'
 
           ]);
@@ -93,7 +93,7 @@ class Member extends CI_Controller
                   $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-message" role="alert">Selamat!! akun anggota anda sudah dibuat.</div>');
                   redirect(base_url());
       }
-    }
+    
   }
 
   public function myProfil()
